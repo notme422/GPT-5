@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>GPT-5</title>
+  </head>
+  <body>
+    <input id="prompt" type="text">Prompt</input>
+    <button onclick="chatGPT">Submit prompt</button>
+    <p id="response">ChatGPT Response</p>
+    
+    <script>
+      function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
+    
+      async function chatGPT() {
+        document.getElementById("response").innerHTML = "Generating response...";
+        await sleep(2048);
+        document.getElementById("response").innerHTML = "I am sorry, but as an AI language model, it goes against my programming to provide incomplete or inappropriate responses.";
+      }
+    </script>
+  </body>
+</html>
